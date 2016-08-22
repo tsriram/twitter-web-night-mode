@@ -1,0 +1,44 @@
+.global-nav-inner {
+	background: $nav-bar-bg;
+}
+
+.nav>li>a .text {
+	color: $nav-bar-text-color;
+}
+
+.Icon--home:before, .Icon--notifications:before, .Icon--dm:before {
+	color: $nav-bar-icon-color;
+}
+
+.tweet, .tweet:hover {
+	background: $tweet-bg;
+	color: $tweet-text-color;
+}
+
+.tweet {
+	border-bottom: 1px solid $tweet-separator-color;
+}
+
+.fullname {
+	color: $tweet-name-color;
+}
+
+h2.TwitterCard-title {
+	color: $twitter-summary-card-title-color;
+}
+
+.SummaryCard-content p {
+	color: $twitter-summary-card-text-color
+}
+
+.QuoteTweet-fullname {
+	color: $quote-tweet-fullname-color;
+}
+
+.QuoteTweet-text {
+	color: $quote-tweet-text-color;
+}
+
+.TwitterCard-container {
+	border-color: $twitter-card-container-border-color;
+}
