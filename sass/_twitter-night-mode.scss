@@ -1,44 +1,173 @@
-.global-nav-inner {
-	background: $nav-bar-bg;
-}
+.route-home, .TwitterCardsGrid {
+	* {
+		border-color: $border-color-light !important;
+	}
 
-.nav>li>a .text {
-	color: $nav-bar-text-color;
-}
+	#global-actions>li>a {
+		border-color: $nav-bar-icon-color !important;
+	}
 
-.Icon--home:before, .Icon--notifications:before, .Icon--dm:before {
-	color: $nav-bar-icon-color;
-}
+	.global-nav-inner {
+		background: $nav-bar-bg;
+	}
 
-.tweet, .tweet:hover {
-	background: $tweet-bg;
-	color: $tweet-text-color;
-}
+	.nav>li>a .text {
+		color: $nav-bar-text-color;
+	}
 
-.tweet {
-	border-bottom: 1px solid $tweet-separator-color;
-}
+	.Icon--home:before, .Icon--notifications:before, .Icon--dm:before {
+		color: $nav-bar-icon-color;
+	}
 
-.fullname {
-	color: $tweet-name-color;
-}
+	.tweet, .tweet:hover {
+		background: $tweet-bg;
+		color: $tweet-text-color;
+	}
 
-h2.TwitterCard-title {
-	color: $twitter-summary-card-title-color;
-}
+	.tweet {
+		border-bottom: 1px solid $tweet-separator-color;
+	}
 
-.SummaryCard-content p {
-	color: $twitter-summary-card-text-color
-}
+	.fullname {
+		color: $tweet-name-color;
+	}
 
-.QuoteTweet-fullname {
-	color: $quote-tweet-fullname-color;
-}
+	h2.TwitterCard-title {
+		color: $twitter-summary-card-title-color;
+	}
 
-.QuoteTweet-text {
-	color: $quote-tweet-text-color;
-}
+	.SummaryCard-content p {
+		color: $twitter-summary-card-text-color
+	}
 
-.TwitterCard-container {
-	border-color: $twitter-card-container-border-color;
+	.QuoteTweet-fullname {
+		color: $quote-tweet-fullname-color;
+	}
+
+	.QuoteTweet-text {
+		color: $quote-tweet-text-color;
+	}
+
+	.TwitterCard-container {
+		border-color: $twitter-card-container-border-color;
+	}
+
+	.DashboardProfileCard-content {
+		background: $dashboard-profile-card-content-bg;
+	}
+
+	.DashboardProfileCard-name {
+		color: $dashboard-profile-card-name-color;
+	}
+
+	.ProfileCardStats-statValue {
+		color: $profile-card-stats-color;
+	}
+
+	.DashboardProfileCard-avatarImage, .DashboardProfileCard-avatarLink {
+		border-color: $dashboard-profile-card-avatar-border-color;	
+	}
+
+	.DashboardProfileCard-bg {
+		border-bottom: none;
+	}
+
+	.new-tweets-bar, .new-tweets-bar:hover {
+		background: $new-tweets-bar-bg;
+		color: $new-tweets-bar-text-color;
+		border-color: $border-color-light;
+	}
+
+	.module .flex-module {
+		background-color: $flex-module-bg;
+	}
+
+	.Trends {
+		background-color: $trends-bg;
+	}
+
+	.u-sizeFit {
+		color: #fff;
+	}
+
+	.TwitterCard-container--clickable:hover {
+		background: $dark-bg;
+	}
+
+	.Trends .trend-location {
+		color: $white;
+	}
+
+	.wtf-module h3 {
+		color: $white;
+	}
+
+	.home-tweet-box, .LiveVideo-tweetBox, .RetweetDialog-commentBox, .WebToast-box--altColor,
+	.modal-container.tweet-showing .modal-tweet,
+	.RetweetDialog-footer,
+	.modal-header,
+	.inline-reply-tweetbox,
+	.suggested-tweet-stream .tweet:hover,
+	.suggested-tweet-stream,
+	.permalink .in-reply-to .stream-item, .permalink .in-reply-to .stream-item .tweet:hover,
+	.conversation-module .conversation-tweet-item .tweet:hover,
+	.tweet.js-stream-tweet.js-actionable-tweet.js-profile-popup-actionable.conversation-ancestor.conversation-tweet:hover,
+	.tweet.js-stream-tweet.js-actionable-tweet.js-profile-popup-actionable.has-cards.conversation-root.conversation-tweet.has-content:hover,
+	.tweet.js-stream-tweet.js-actionable-tweet.js-profile-popup-actionable.ancestor.hidden-ancestor.permalink-ancestor-tweet:hover,
+	.permalink.light-inline-actions.stream-uncapped.has-replies.original-permalink-page,
+	.DashboardProfileCard-avatarLink,
+	.ProfileCard,
+	.stream-end-inner,
+	.social-proof-label {
+		background-color: $dark-bg;
+	}
+
+	.modal-header {
+		border-bottom-color: $border-color-light;
+	}
+
+	.permalink .in-reply-to .tweet, .permalink .replies-to .tweet,
+	.permalink.has-replies .inline-reply-tweetbox {
+		border-color: $border-color-light;
+	}
+
+	li.missing-tweets-bar {
+		background-color: $missing-tweets-bar-bg;
+	}
+
+	p.TweetTextSize.js-tweet-text.tweet-text,
+	.modal-header .modal-title,
+	h3.promoted-heading,
+	.profile-card-listName
+	.missing-tweets-link, .missing-tweets-link:hover,
+	.u-textTruncate,
+	.PollXChoice-choice--text,
+	.bio-container,
+	.FollowStatus,
+	.QuoteTweet-text a.twitter-timeline-link {
+		color: $white;
+	}
+
+	.permalink .stream-end-inner,
+	.FollowStatus {
+		background-color: $border-color-light;
+	}
+
+	.ProfileCard-avatarLink {
+		border-color: $dark-bg !important;
+	}
+
+	.QuoteTweet-text a,
+	.QuoteTweet .tweet-content, .QuoteTweet-text a, .QuoteTweet-text a:hover, 
+	.QuoteTweet-text a:focus, .QuoteTweet-text a:active, 
+	.QuoteTweet-text .pretty-link b, .QuoteTweet-text .pretty-link s, 
+	.QuoteTweet-text .pretty-link:hover b, .QuoteTweet-text .pretty-link:hover s, 
+	.QuoteTweet-text .pretty-link:focus b, .QuoteTweet-text .pretty-link:focus s, 
+	.QuoteTweet-text .pretty-link:active b, .QuoteTweet-text .pretty-link:active s {
+		color: $link-color;
+	}
+
+	.TweetBox-photoIntent .photo-selector .btn {
+		border-color: transparent !important;
+	}
 }
