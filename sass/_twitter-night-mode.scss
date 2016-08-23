@@ -118,7 +118,8 @@
 	.DashboardProfileCard-avatarLink,
 	.ProfileCard,
 	.stream-end-inner,
-	.social-proof-label {
+	.social-proof-label,
+	ol.conversation-module.stream-items.js-navigable-stream.collapsed-ancestors {
 		background-color: $dark-bg;
 	}
 
