@@ -9,7 +9,10 @@
 
 	"content_scripts": [
 		{
-			"matches": ["https://twitter.com/*"],
+			"matches": [
+				"https://twitter.com/",
+				"https://twitter.com/i/cards/*"
+			],
 			"js": ["twitter-night-mode.js"],
 			"all_frames": true,
 			"run_at" : "document_end"
