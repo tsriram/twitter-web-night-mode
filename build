@@ -1,5 +1,0 @@
-mkdir -p dist dist/images
-sass sass/main.scss dist/twitter-night-mode.css --sourcemap=none
-cp js/* dist/.
-cp images/* dist/images/
-cp manifest.json dist/
