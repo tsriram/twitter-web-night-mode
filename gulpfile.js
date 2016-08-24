@@ -30,8 +30,8 @@ function copyFiles() {
 function sassTask() {
   return gulp.src(paths.sass)
           .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-          .pipe(gulp.dest(paths.dest.chrome))
-          .pipe(gulp.dest(paths.dest.firefox));
+          .pipe(gulp.dest(paths.dest.chrome + '/css'))
+          .pipe(gulp.dest(paths.dest.firefox + '/css'));
 }
 
 function firefoxManifest(data, meta) {
