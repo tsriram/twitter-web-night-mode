@@ -1,7 +1,7 @@
 var c = chrome || browser;
 
 function setNightMode(tab) {
-	c.tabs.insertCSS(tab.id, { file: 'twitter-night-mode.css', allFrames: true});
+	c.tabs.insertCSS(tab.id, { file: 'css/main.css', allFrames: true});
 }
 
 c.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
