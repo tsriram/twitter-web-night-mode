@@ -17,6 +17,12 @@
     "128": "images/icon128.png"
   },
 
+
+  "page_action": {
+    "default_icon": "images/icon32.png",
+    "default_title": "Night mode enabled. Click to disable."
+  },
+
   "content_scripts": [
    {
      "matches": [
@@ -32,7 +38,8 @@
 
   "permissions": [
     "https://twitter.com/",
-    "tabs"
+    "tabs",
+    "storage"
   ],
 
   "author": [
