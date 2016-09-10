@@ -1,4 +1,5 @@
 var c = chrome || browser;
+var regex = /https:\/\/twitter.com\/$|https:\/\/twitter.com\/\?lang=[A-Za-z]{2}$/;
 
 c.pageAction.onClicked.addListener(function(tab) {
   c.storage.local.get({'nightmode': true}, function(items) {
@@ -27,7 +28,7 @@ function setNightMode(tab) {
 }
 
 c.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
-	if(tab.url && tab.url === 'https://twitter.com/') {
+	if(tab.url && regex.test(tab.url)) {
     c.pageAction.show(tab.id);
     c.storage.local.get({'nightmode': true}, function(items) {
       if(items.nightmode) {
