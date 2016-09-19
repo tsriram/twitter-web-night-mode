@@ -1,11 +1,11 @@
 body.three-col.logged-in {
 	background-color: $light-bg!important;
 }
+* {
+	border-color: $border-color-light !important;
+}
 
-.route-home, .route-profile, .TwitterCardsGrid {
-	* {
-		border-color: $border-color-light !important;
-	}
+.route-home, .route-profile, .TwitterCardsGrid, .route-connect {	
 
 	#global-actions>li>a {
 		border-color: $nav-bar-icon-color !important;
@@ -150,7 +150,8 @@ body.three-col.logged-in {
 	.PollXChoice-choice--text,
 	.bio-container,
 	.FollowStatus,
-	.QuoteTweet-text a.twitter-timeline-link {
+	.QuoteTweet-text a.twitter-timeline-link,
+	.tweet.permalink-tweet {
 		color: $white;
 	}
 
@@ -169,7 +170,8 @@ body.three-col.logged-in {
 	.QuoteTweet-text .pretty-link b, .QuoteTweet-text .pretty-link s, 
 	.QuoteTweet-text .pretty-link:hover b, .QuoteTweet-text .pretty-link:hover s, 
 	.QuoteTweet-text .pretty-link:focus b, .QuoteTweet-text .pretty-link:focus s, 
-	.QuoteTweet-text .pretty-link:active b, .QuoteTweet-text .pretty-link:active s {
+	.QuoteTweet-text .pretty-link:active b, .QuoteTweet-text .pretty-link:active s,
+	.fullname {
 		color: $link-color;
 	}
 
@@ -207,4 +209,73 @@ body.three-col.logged-in {
 	.Footer-link {
 		color: $link-color!important;
 	}
+}
+
+// notifications tab
+.route-connect {
+	.ProfileHeading-toggle,
+	.stream-item {
+		background-color: $dark-bg!important;
+	}
+	.stream-item-activity-line {
+		color: $text-grey!important;
+	}
+	.ProfileHeading-toggleItem.is-active {
+		color: $white;
+	}
+}
+
+// common styles - across all pages
+.tweet.permalink-tweet,
+.permalink-inner.permalink-tweet-container,
+.dropdown-menu,
+.stream.suggested-tweet-stream.permalink-replies,
+.tweet,
+.tweet:hover,
+.ThreadedConversation-viewOther,
+.permalink,
+.modal-content,
+.modal-header,
+.PollingCardComposer,
+.FoundMediaSearch-query {
+	background-color: $dark-bg!important;
+}
+
+.inline-reply-tweetbox.swift,
+.thumbnail-container {
+	background-color: $light-bg!important;
+}
+
+.tweet.permalink-tweet,
+.stream.suggested-tweet-stream.permalink-replies,
+.tweet-text,
+.modal-title {
+	color: $white!important;
+}
+
+.fullname {
+	color: $link-color!important;
+}
+
+.inline-reply-tweetbox.swift,
+.stream.suggested-tweet-stream.permalink-replies {
+	border-color: $border-color-light;
+}
+
+.caret-inner {
+	border-bottom-color: $light-bg!important;	
+}
+
+.caret-outer, .caret-inner {
+	border-color: transparent!important;
+}
+
+.photo-tagging-controls.user-select-controls {
+	background-color: $white!important;
+}
+
+
+// style for user select box for tagging a photo
+.typeahead-user-item-info .fullname {
+	color: $white!important;
 }
