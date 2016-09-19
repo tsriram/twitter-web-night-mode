@@ -337,3 +337,63 @@ body.three-col.logged-in {
 .sc-key {
 	box-shadow: none!important;
 }
+
+// account page - /settings/account
+.content-header .header-inner,
+.content-inner,
+.DashboardProfileCard,
+#settings_nav li a,
+#notifications-optout-all-top,
+.notification-prompt.notifications-web-soft-prompt,
+.find-friends-top-subheader,
+.find-friends-sources,
+.stream-end-inner,
+.stream-item {
+	background-color: $dark-bg!important;
+}
+
+.find-friends-list li:hover {
+	background-color: $light-bg!important;
+}
+
+#settings_nav .list-link,
+.control-label,
+.DashboardProfileCard-name,
+.settings-header,
+.t1-label,
+#notifications-optout-all-top,
+.notification-prompt.notifications-web-soft-prompt,
+.find-friends-top-subheader,
+.source,
+.content,
+.FacebookConnect-title,
+.controls,
+#content-main-heading,
+.header-cell.application-column,
+.header-cell.date-column,
+.header-cell.ip-column {
+	color: $white!important;
+}
+
+.supported-text,
+.application-column,
+.date-column,
+.ip-column {
+	color: $text-grey;
+}
+
+#settings_nav .list-link:hover {
+	color: $link-color;
+}
+
+.flex-module {
+	background-color: $dark-bg!important;
+}
+
+// alert messages - try saving a setting to see this
+.message {
+	background-color: $light-bg!important;
+}
+.message-text {
+	color: $white!important;
+}
