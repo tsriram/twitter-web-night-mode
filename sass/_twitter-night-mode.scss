@@ -1,7 +1,8 @@
 body.three-col.logged-in {
-	background-color: $light-bg;
+	background-color: $light-bg!important;
 }
-.route-home, .TwitterCardsGrid {
+
+.route-home, .route-profile, .TwitterCardsGrid {
 	* {
 		border-color: $border-color-light !important;
 	}
@@ -11,7 +12,7 @@ body.three-col.logged-in {
 	}
 
 	.global-nav-inner {
-		background: $nav-bar-bg;
+		background-color: $nav-bar-bg;
 	}
 
 	.nav>li>a .text {
@@ -174,5 +175,36 @@ body.three-col.logged-in {
 
 	.TweetBox-photoIntent .photo-selector .btn {
 		border-color: transparent !important;
+	}
+}
+
+.route-profile {
+	.ProfileCanopy-navBar,
+	.WhoToFollow,
+	.ProfileNav-item--userActions {
+		background-color: $dark-bg;
+	}
+	.ProfileNav-value,
+	.WhoToFollow-users .fullname,
+	.ProfileNav-item.is-active .ProfileNav-value, .ProfileNav-item.is-active:hover .ProfileNav-value,
+	.Footer-link {
+		color: $link-color;
+	}
+	.ProfileHeading-content {
+		background-color: $dark-bg;
+	}
+	.ProfileHeading-toggleItem.is-active, .ProfileHeading-toggleItem.is-active:hover, .ProfileHeading-toggleItem.is-active:focus,
+	.ProfileHeaderCard-bio,
+	.ProfileHeaderCard-locationText,
+	.ProfileHeaderCard-joinDateText,
+	.ProfileHeaderCard-birthdateText {
+		color: $white;
+	}
+	.flex-module {
+		background-color: transparent!important;
+	}
+	.ProfileHeaderCard-nameLink,
+	.Footer-link {
+		color: $link-color!important;
 	}
 }
