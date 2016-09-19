@@ -264,8 +264,15 @@ body.three-col.logged-in {
 .PollingCardComposer,
 .profile-card,
 .ProfileCard,
-.profile-social-proof {
+.profile-social-proof,
+.GridTimeline-items {
 	background-color: $dark-bg!important;
+}
+
+// border top of this element distorts the UI a bit when
+// the container's bg is same as border color
+.GridTimeline-items .Grid:first-child .ProfileListItem {
+	border-top: 0;
 }
 
 .FoundMediaSearch-query {
@@ -275,7 +282,9 @@ body.three-col.logged-in {
 .inline-reply-tweetbox.swift,
 .thumbnail-container,
 .FollowStatus,
-.FoundMediaSearch-query {
+.FoundMediaSearch-query,
+.GridTimeline-footerIcon,
+.GridTimeline-footer:before {
 	background-color: $light-bg!important;
 }
 
@@ -288,7 +297,9 @@ body.three-col.logged-in {
 .tweet-text,
 .modal-title,
 .bio-container .bio,
-.ProfileNameTruncated {
+.ProfileNameTruncated,
+.account-group .fullname,
+.ProfileListItem-bio.u-dir {
 	color: $white!important;
 }
 
