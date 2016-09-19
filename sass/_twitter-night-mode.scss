@@ -5,23 +5,7 @@ body.three-col.logged-in {
 	border-color: $border-color-light !important;
 }
 
-.route-home, .route-profile, .TwitterCardsGrid, .route-connect {	
-
-	#global-actions>li>a {
-		border-color: $nav-bar-icon-color !important;
-	}
-
-	.global-nav-inner {
-		background-color: $nav-bar-bg;
-	}
-
-	.nav>li>a .text {
-		color: $nav-bar-text-color;
-	}
-
-	.Icon--home:before, .Icon--notifications:before, .Icon--dm:before {
-		color: $nav-bar-icon-color;
-	}
+.route-home, .route-profile, .TwitterCardsGrid, .route-connect {
 
 	.tweet, .tweet:hover {
 		background: $tweet-bg;
@@ -251,6 +235,22 @@ body.three-col.logged-in {
 }
 
 // common styles - across all pages
+#global-actions>li>a {
+	border-color: $nav-bar-icon-color !important;
+}
+
+.global-nav-inner {
+	background-color: $nav-bar-bg!important;
+}
+
+.nav>li>a .text {
+	color: $nav-bar-text-color!important;
+}
+
+.Icon--home:before, .Icon--notifications:before, .Icon--dm:before {
+	color: $nav-bar-icon-color!important;
+}
+
 .tweet.permalink-tweet,
 .permalink-inner.permalink-tweet-container,
 .dropdown-menu,
