@@ -220,7 +220,8 @@ body.three-col.logged-in {
 	.stream-item-activity-line {
 		color: $text-grey!important;
 	}
-	.ProfileHeading-toggleItem.is-active {
+	.ProfileHeading-toggleItem.is-active,
+	.ProfileHeading-toggleItem.is-active:hover {
 		color: $white;
 	}
 }
@@ -237,19 +238,25 @@ body.three-col.logged-in {
 .modal-content,
 .modal-header,
 .PollingCardComposer,
-.FoundMediaSearch-query {
+.FoundMediaSearch-query,
+.profile-card,
+.ProfileCard,
+.profile-social-proof {
 	background-color: $dark-bg!important;
 }
 
 .inline-reply-tweetbox.swift,
-.thumbnail-container {
+.thumbnail-container,
+.FollowStatus {
 	background-color: $light-bg!important;
 }
 
 .tweet.permalink-tweet,
 .stream.suggested-tweet-stream.permalink-replies,
 .tweet-text,
-.modal-title {
+.modal-title,
+.bio-container .bio,
+.ProfileNameTruncated {
 	color: $white!important;
 }
 
