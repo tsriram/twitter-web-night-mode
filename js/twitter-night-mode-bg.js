@@ -1,5 +1,5 @@
 var c = chrome || browser;
-var regex = /https:\/\/twitter.com\/$|https:\/\/twitter.com\/\?lang=[A-Za-z]{2}$/;
+var regex = /https:\/\/twitter\.com\/(.*)/;
 
 c.pageAction.onClicked.addListener(function(tab) {
   c.storage.local.get({'nightmode': true}, function(items) {
