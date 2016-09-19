@@ -226,6 +226,30 @@ body.three-col.logged-in {
 	}
 }
 
+// DMs
+.DMActivity {
+	.DMActivity-header,
+	.DMActivity-body {
+		background-color: $dark-bg;
+	}
+	.DMNotice,
+	.DMInboxItem:hover,
+	.DMInboxItem.is-unread,
+	.DirectMessage--received .DirectMessage-message,
+	.DirectMessage--received .Caret:before,
+	.DMConversation-composer,
+	.DMPopoverMenu {
+		background-color: $light-bg!important;
+	}
+	.FoundMediaSearch-content.Caret:after {
+		border-color: $dark-bg;
+	}
+	.DMPopover-content.Caret:after,
+	.DMInbox-toolbar.DMComposeButton:focus {
+		border-color: $light-bg!important;
+	}
+}
+
 // common styles - across all pages
 .tweet.permalink-tweet,
 .permalink-inner.permalink-tweet-container,
@@ -238,17 +262,25 @@ body.three-col.logged-in {
 .modal-content,
 .modal-header,
 .PollingCardComposer,
-.FoundMediaSearch-query,
 .profile-card,
 .ProfileCard,
 .profile-social-proof {
 	background-color: $dark-bg!important;
 }
 
+.FoundMediaSearch-query {
+	background-image: none;
+}
+
 .inline-reply-tweetbox.swift,
 .thumbnail-container,
-.FollowStatus {
+.FollowStatus,
+.FoundMediaSearch-query {
 	background-color: $light-bg!important;
+}
+
+.FoundMediaSearch-content.Caret:after {
+	border-color: $light-bg;
 }
 
 .tweet.permalink-tweet,
