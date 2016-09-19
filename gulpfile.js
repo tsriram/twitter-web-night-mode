@@ -63,3 +63,7 @@ gulp.task('manifest', copyManifest);
 gulp.task('default', function(done) {
   runSequence('clean', 'copy', 'sass', 'manifest', done);
 });
+
+gulp.task('watch', function() {
+  gulp.watch(['sass/**/*.scss', 'js/**/*.js', 'images/**/*', 'manifest.json'], ['default']);
+});
