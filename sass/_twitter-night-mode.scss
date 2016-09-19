@@ -329,3 +329,11 @@ body.three-col.logged-in {
 .typeahead-user-item-info .fullname {
 	color: $white!important;
 }
+
+// keyboard shortcuts modal
+.keyboard-shortcuts th {
+	color: $white;
+}
+.sc-key {
+	box-shadow: none!important;
+}
