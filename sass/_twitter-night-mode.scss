@@ -332,7 +332,7 @@ body.three-col.logged-in {
 
 // keyboard shortcuts modal
 .keyboard-shortcuts th {
-	color: $white;
+	color: $white!important;
 }
 .sc-key {
 	box-shadow: none!important;
@@ -371,8 +371,15 @@ body.three-col.logged-in {
 #content-main-heading,
 .header-cell.application-column,
 .header-cell.date-column,
-.header-cell.ip-column {
+.header-cell.ip-column,
+.view-toggler .active,
+.Icon--device {
 	color: $white!important;
+}
+
+.t1-select,
+.controls input {
+	color: #000;
 }
 
 .supported-text,
