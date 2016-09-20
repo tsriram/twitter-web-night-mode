@@ -133,8 +133,7 @@ body.three-col.logged-in {
 	.u-textTruncate,
 	.PollXChoice-choice--text,
 	.bio-container,
-	.FollowStatus,
-	.QuoteTweet-text a.twitter-timeline-link,
+	.FollowStatus,	
 	.tweet.permalink-tweet {
 		color: $white;
 	}
@@ -213,6 +212,7 @@ body.three-col.logged-in {
 // DMs
 .DMActivity {
 	.DMActivity-header,
+	.DirectMessage--received .Caret:before,
 	.DMActivity-body {
 		background-color: $dark-bg;
 	}
@@ -220,7 +220,6 @@ body.three-col.logged-in {
 	.DMInboxItem:hover,
 	.DMInboxItem.is-unread,
 	.DirectMessage--received .DirectMessage-message,
-	.DirectMessage--received .Caret:before,
 	.DMConversation-composer,
 	.DMPopoverMenu {
 		background-color: $light-bg!important;
@@ -229,8 +228,18 @@ body.three-col.logged-in {
 		border-color: $dark-bg;
 	}
 	.DMPopover-content.Caret:after,
+	.DirectMessage--received .Caret:before,
 	.DMInbox-toolbar.DMComposeButton:focus {
 		border-color: $light-bg!important;
+	}
+	.DirectMessage--received .DirectMessage-message.with-text.Caret.Caret--left.dm-message:before {
+		border-bottom-color: transparent!important;
+		border-top-color: transparent!important;
+	}
+	.Caret--top:before, .Caret--top.Caret--stroked:after {
+		border-left-color: transparent!important;
+		border-right-color: transparent!important;
+		border-top-color: transparent!important;
 	}
 }
 
@@ -266,7 +275,8 @@ body.three-col.logged-in {
 .ProfileCard,
 .profile-social-proof,
 .GridTimeline-items,
-.hovercard.gravity-south:not(.with-banner) .arrow {
+.hovercard.gravity-south:not(.with-banner) .arrow,
+.hovercard .arrow {
 	background-color: $dark-bg!important;
 }
 
