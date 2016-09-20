@@ -5,10 +5,9 @@ chrome.storage.local.get({'nightmode': true}, function(items) {
 });
 
 function setNightMode() {
-  if(document.URL == 'https://twitter.com/'
-    || document.URL == 'https://twitter.com'
-    || document.URL.indexOf('https://twitter.com/i/cards/') === 0) {
+  var regex = /https:\/\/twitter\.com\/(.*)/;
 
+  if(regex.test(document.URL)) {
     var style = document.createElement('link');
     style.rel = 'stylesheet';
     style.type = 'text/css';

@@ -10,6 +10,8 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-jsoncombine": "^1.0.3",
-    "gulp-sass": "^2.3.2"
+    "gulp-sass": "^2.3.2",
+    "del": "^2.2.2",
+    "run-sequence": "^1.2.2"
   }
 }

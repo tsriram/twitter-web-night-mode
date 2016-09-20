@@ -1,6 +1,8 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var jsoncombine = require('gulp-jsoncombine');
+var del = require('del');
+var runSequence = require('run-sequence');
 
 var paths = {
   files: ['images/**/*', 'js/**/*'],
@@ -19,6 +21,10 @@ var ffmanifest = {
       "id": "twitter-night-mode@mozilla.org"
     }
   }
+}
+
+function clean() {
+  return del('dist');
 }
 
 function copyFiles() {
@@ -46,10 +52,18 @@ function copyManifest() {
           .pipe(gulp.dest(paths.dest.firefox));
 }
 
+gulp.task('clean', clean);
+
 gulp.task('copy', copyFiles);
 
 gulp.task('sass', sassTask);
 
 gulp.task('manifest', copyManifest);
 
-gulp.task('default', ['copy', 'sass', 'manifest']);
+gulp.task('default', function(done) {
+  runSequence('clean', 'copy', 'sass', 'manifest', done);
+});
+
+gulp.task('watch', function() {
+  gulp.watch(['sass/**/*.scss', 'js/**/*.js', 'images/**/*', 'manifest.json'], ['default']);
+});

@@ -1,26 +1,11 @@
 body.three-col.logged-in {
-	background-color: $light-bg;
+	background-color: $light-bg!important;
 }
-.route-home, .TwitterCardsGrid {
-	* {
-		border-color: $border-color-light !important;
-	}
+* {
+	border-color: $border-color-light !important;
+}
 
-	#global-actions>li>a {
-		border-color: $nav-bar-icon-color !important;
-	}
-
-	.global-nav-inner {
-		background: $nav-bar-bg;
-	}
-
-	.nav>li>a .text {
-		color: $nav-bar-text-color;
-	}
-
-	.Icon--home:before, .Icon--notifications:before, .Icon--dm:before {
-		color: $nav-bar-icon-color;
-	}
+.route-home, .route-profile, .TwitterCardsGrid, .route-connect {
 
 	.tweet, .tweet:hover {
 		background: $tweet-bg;
@@ -148,8 +133,8 @@ body.three-col.logged-in {
 	.u-textTruncate,
 	.PollXChoice-choice--text,
 	.bio-container,
-	.FollowStatus,
-	.QuoteTweet-text a.twitter-timeline-link {
+	.FollowStatus,	
+	.tweet.permalink-tweet {
 		color: $white;
 	}
 
@@ -168,11 +153,270 @@ body.three-col.logged-in {
 	.QuoteTweet-text .pretty-link b, .QuoteTweet-text .pretty-link s, 
 	.QuoteTweet-text .pretty-link:hover b, .QuoteTweet-text .pretty-link:hover s, 
 	.QuoteTweet-text .pretty-link:focus b, .QuoteTweet-text .pretty-link:focus s, 
-	.QuoteTweet-text .pretty-link:active b, .QuoteTweet-text .pretty-link:active s {
+	.QuoteTweet-text .pretty-link:active b, .QuoteTweet-text .pretty-link:active s,
+	.fullname {
 		color: $link-color;
 	}
 
 	.TweetBox-photoIntent .photo-selector .btn {
 		border-color: transparent !important;
 	}
+}
+
+.route-profile {
+	.ProfileCanopy-navBar,
+	.WhoToFollow,
+	.ProfileNav-item--userActions {
+		background-color: $dark-bg;
+	}
+	.ProfileNav-value,
+	.WhoToFollow-users .fullname,
+	.ProfileNav-item.is-active .ProfileNav-value, .ProfileNav-item.is-active:hover .ProfileNav-value,
+	.Footer-link {
+		color: $link-color;
+	}
+	.ProfileHeading-content {
+		background-color: $dark-bg;
+	}
+	.ProfileHeading-toggleItem.is-active, .ProfileHeading-toggleItem.is-active:hover, .ProfileHeading-toggleItem.is-active:focus,
+	.ProfileHeaderCard-bio,
+	.ProfileHeaderCard-locationText,
+	.ProfileHeaderCard-joinDateText,
+	.ProfileHeaderCard-birthdateText {
+		color: $white;
+	}
+	.flex-module {
+		background-color: transparent!important;
+	}
+	.ProfileHeaderCard-nameLink,
+	.Footer-link {
+		color: $link-color!important;
+	}
+}
+
+// notifications tab
+.route-connect {
+	.ProfileHeading-toggle,
+	.stream-item {
+		background-color: $dark-bg!important;
+	}
+	.stream-item-activity-line {
+		color: $text-grey!important;
+	}
+	.ProfileHeading-toggleItem.is-active,
+	.ProfileHeading-toggleItem.is-active:hover {
+		color: $white;
+	}
+}
+
+// DMs
+.DMActivity {
+	.DMActivity-header,
+	.DirectMessage--received .Caret:before,
+	.DMActivity-body {
+		background-color: $dark-bg;
+	}
+	.DMNotice,
+	.DMInboxItem:hover,
+	.DMInboxItem.is-unread,
+	.DirectMessage--received .DirectMessage-message,
+	.DMConversation-composer,
+	.DMPopoverMenu {
+		background-color: $light-bg!important;
+	}
+	.FoundMediaSearch-content.Caret:after {
+		border-color: $dark-bg;
+	}
+	.DMPopover-content.Caret:after,
+	.DirectMessage--received .Caret:before,
+	.DMInbox-toolbar.DMComposeButton:focus {
+		border-color: $light-bg!important;
+	}
+	.DirectMessage--received .DirectMessage-message.with-text.Caret.Caret--left.dm-message:before {
+		border-bottom-color: transparent!important;
+		border-top-color: transparent!important;
+	}
+	.Caret--top:before, .Caret--top.Caret--stroked:after {
+		border-left-color: transparent!important;
+		border-right-color: transparent!important;
+		border-top-color: transparent!important;
+	}
+}
+
+// common styles - across all pages
+#global-actions>li>a {
+	border-color: $nav-bar-icon-color !important;
+}
+
+.global-nav-inner {
+	background-color: $nav-bar-bg!important;
+}
+
+.nav>li>a .text {
+	color: $nav-bar-text-color!important;
+}
+
+.Icon--home:before, .Icon--notifications:before, .Icon--dm:before {
+	color: $nav-bar-icon-color!important;
+}
+
+.tweet.permalink-tweet,
+.permalink-inner.permalink-tweet-container,
+.dropdown-menu,
+.stream.suggested-tweet-stream.permalink-replies,
+.tweet,
+.tweet:hover,
+.ThreadedConversation-viewOther,
+.permalink,
+.modal-content,
+.modal-header,
+.PollingCardComposer,
+.profile-card,
+.ProfileCard,
+.profile-social-proof,
+.GridTimeline-items,
+.hovercard.gravity-south:not(.with-banner) .arrow,
+.hovercard .arrow {
+	background-color: $dark-bg!important;
+}
+
+// border top of this element distorts the UI a bit when
+// the container's bg is same as border color
+.GridTimeline-items .Grid:first-child .ProfileListItem {
+	border-top: 0;
+}
+
+.FoundMediaSearch-query {
+	background-image: none;
+}
+
+.inline-reply-tweetbox.swift,
+.thumbnail-container,
+.FollowStatus,
+.FoundMediaSearch-query,
+.GridTimeline-footerIcon,
+.GridTimeline-footer:before {
+	background-color: $light-bg!important;
+}
+
+.FoundMediaSearch-content.Caret:after {
+	border-color: $light-bg;
+}
+
+.tweet.permalink-tweet,
+.stream.suggested-tweet-stream.permalink-replies,
+.tweet-text,
+.modal-title,
+.bio-container .bio,
+.ProfileNameTruncated,
+.account-group .fullname,
+.ProfileListItem-bio.u-dir {
+	color: $white!important;
+}
+
+.fullname {
+	color: $link-color!important;
+}
+
+.inline-reply-tweetbox.swift,
+.stream.suggested-tweet-stream.permalink-replies {
+	border-color: $border-color-light;
+}
+
+.caret-inner {
+	border-bottom-color: $light-bg!important;	
+}
+
+.caret-outer, .caret-inner {
+	border-color: transparent!important;
+}
+
+.photo-tagging-controls.user-select-controls {
+	background-color: $white!important;
+}
+
+
+// style for user select box for tagging a photo
+.typeahead-user-item-info .fullname {
+	color: $white!important;
+}
+
+// keyboard shortcuts modal
+.keyboard-shortcuts th {
+	color: $white!important;
+}
+.sc-key {
+	box-shadow: none!important;
+}
+
+// account page - /settings/account
+.content-header .header-inner,
+.content-inner,
+.DashboardProfileCard,
+#settings_nav li a,
+#notifications-optout-all-top,
+.notification-prompt.notifications-web-soft-prompt,
+.find-friends-top-subheader,
+.find-friends-sources,
+.stream-end-inner,
+.stream-item {
+	background-color: $dark-bg!important;
+}
+
+.find-friends-list li:hover {
+	background-color: $light-bg!important;
+}
+
+#settings_nav .list-link,
+.control-label,
+.DashboardProfileCard-name,
+.settings-header,
+.t1-label,
+#notifications-optout-all-top,
+.notification-prompt.notifications-web-soft-prompt,
+.find-friends-top-subheader,
+.source,
+.content,
+.FacebookConnect-title,
+.controls,
+#content-main-heading,
+.header-cell.application-column,
+.header-cell.date-column,
+.header-cell.ip-column,
+.view-toggler .active,
+.Icon--device {
+	color: $white!important;
+}
+
+.t1-select,
+.controls input {
+	color: #000;
+}
+
+.supported-text,
+.application-column,
+.date-column,
+.ip-column {
+	color: $text-grey;
+}
+
+#settings_nav .list-link:hover {
+	color: $link-color;
+}
+
+.flex-module {
+	background-color: $dark-bg!important;
+}
+
+// alert messages - try saving a setting to see this
+.message {
+	background-color: $light-bg!important;
+}
+.message-text {
+	color: $white!important;
+}
+
+// logged out state
+body.three-col.logged-out {
+	background-color: $light-bg!important;
 }
