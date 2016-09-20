@@ -265,7 +265,8 @@ body.three-col.logged-in {
 .profile-card,
 .ProfileCard,
 .profile-social-proof,
-.GridTimeline-items {
+.GridTimeline-items,
+.hovercard.gravity-south:not(.with-banner) .arrow {
 	background-color: $dark-bg!important;
 }
 
@@ -403,4 +404,9 @@ body.three-col.logged-in {
 }
 .message-text {
 	color: $white!important;
+}
+
+// logged out state
+body.three-col.logged-out {
+	background-color: $light-bg!important;
 }
