@@ -45,7 +45,7 @@ c.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
       }
     });
 	}else {
-    c.pageAction.setTitle({tabId: tab.id, title: 'Extension will be enabled if you open twitter.com'});
+    c.pageAction.setTitle({tabId: tab.id, title: 'Extension will be enabled when you open twitter.com'});
   }
 });
 

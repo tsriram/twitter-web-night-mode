@@ -21,7 +21,7 @@
 
   "page_action": {
     "default_icon": "images/icon32.png",
-    "default_title": "Night mode enabled. Click to disable."
+    "default_title": "Extension will be enabled when you open twitter.com"
   },
 
   "content_scripts": [
