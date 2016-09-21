@@ -384,7 +384,11 @@ body.three-col.logged-in {
 .header-cell.date-column,
 .header-cell.ip-column,
 .view-toggler .active,
-.Icon--device {
+.Icon--device,
+.u-linkComplex-target,
+.pretty-link s,
+.pretty-link b,
+.twitter-timeline-link {
 	color: $white!important;
 }
 
