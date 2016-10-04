@@ -60,14 +60,6 @@ body.three-col.logged-in {
 		border-bottom: none;
 	}
 
-	.stream-container .new-tweets-bar {
-			&, &:hover {
-			background: $new-tweets-bar-bg;
-			color: $new-tweets-bar-text-color;
-			border-color: $border-color-light;
-		}
-	}
-
 	.module .flex-module {
 		background-color: $flex-module-bg;
 	}
@@ -162,6 +154,14 @@ body.three-col.logged-in {
 
 	.TweetBox-photoIntent .photo-selector .btn {
 		border-color: transparent !important;
+	}
+}
+
+.stream-container .new-tweets-bar {
+		&, &:hover {
+		background: $new-tweets-bar-bg;
+		color: $new-tweets-bar-text-color;
+		border-color: $border-color-light;
 	}
 }
 
