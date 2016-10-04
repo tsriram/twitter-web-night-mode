@@ -60,10 +60,12 @@ body.three-col.logged-in {
 		border-bottom: none;
 	}
 
-	.new-tweets-bar, .new-tweets-bar:hover {
-		background: $new-tweets-bar-bg;
-		color: $new-tweets-bar-text-color;
-		border-color: $border-color-light;
+	.stream-container .new-tweets-bar {
+			&, &:hover {
+			background: $new-tweets-bar-bg;
+			color: $new-tweets-bar-text-color;
+			border-color: $border-color-light;
+		}
 	}
 
 	.module .flex-module {
