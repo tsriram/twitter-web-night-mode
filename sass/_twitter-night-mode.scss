@@ -422,3 +422,13 @@ body.three-col.logged-in {
 body.three-col.logged-out {
 	background-color: $light-bg!important;
 }
+
+// Moments page styles
+
+.MomentGuideNavigation-label {
+	color: $nav-bar-text-color;
+}
+
+.MomentGuideNavigation {
+	background-color: $dark-bg!important;
+}
