@@ -425,10 +425,17 @@ body.three-col.logged-out {
 
 // Moments page styles
 
-.MomentGuideNavigation-label {
-	color: $nav-bar-text-color;
+.MomentGuideNavigation-label, .MomentGuideVTwoCapsuleSummary-title, .MomentCapsuleCover-title {
+	color: $nav-bar-text-color!important;
+	padding: 3px;
 }
 
-.MomentGuideNavigation {
+.MomentGuideNavigation, .MomentGuideVTwoCapsuleGroup .MomentGuideVTwoCapsuleSummary--portrait, .MomentGuideVTwoCapsuleSummary--hero {
 	background-color: $dark-bg!important;
+}
+
+//test
+.MomentGuideVTwoCapsuleSummary-description, .MomentUserByline-fullname, .MomentCapsuleCover-description {
+	padding: 3px;
+	color: lighten($text-grey, 10%)!important;
 }
