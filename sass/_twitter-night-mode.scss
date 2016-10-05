@@ -424,18 +424,19 @@ body.three-col.logged-out {
 }
 
 // Moments page styles
-
 .MomentGuideNavigation-label, .MomentGuideVTwoCapsuleSummary-title, .MomentCapsuleCover-title {
 	color: $nav-bar-text-color!important;
 	padding: 3px;
 }
 
-.MomentGuideNavigation, .MomentGuideVTwoCapsuleGroup .MomentGuideVTwoCapsuleSummary--portrait, .MomentGuideVTwoCapsuleSummary--hero {
+.MomentGuideNavigation, .MomentGuideVTwoCapsuleGroup .MomentGuideVTwoCapsuleSummary--portrait, .MomentGuideVTwoCapsuleSummary--hero, .MomentCapsuleVTwoItemTweet--withText {
 	background-color: $dark-bg!important;
 }
 
-//test
 .MomentGuideVTwoCapsuleSummary-description, .MomentUserByline-fullname, .MomentCapsuleCover-description {
 	padding: 3px;
-	color: lighten($text-grey, 10%)!important;
+	color: lighten($text-grey, 7%)!important;
+}
+.twitter-atreply, .js-display-url{
+	color: $text-grey!important;
 }
