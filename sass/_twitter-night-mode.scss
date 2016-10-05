@@ -157,14 +157,6 @@ body.three-col.logged-in {
 	}
 }
 
-.stream-container .new-tweets-bar {
-		&, &:hover {
-		background: $new-tweets-bar-bg;
-		color: $new-tweets-bar-text-color;
-		border-color: $border-color-light;
-	}
-}
-
 .route-profile {
 	.ProfileCanopy-navBar,
 	.WhoToFollow,
@@ -260,6 +252,14 @@ body.three-col.logged-in {
 
 .Icon--home:before, .Icon--notifications:before, .Icon--dm:before {
 	color: $nav-bar-icon-color!important;
+}
+
+.stream-container .new-tweets-bar {
+		&, &:hover {
+		background: $new-tweets-bar-bg;
+		color: $new-tweets-bar-text-color;
+		border-color: $border-color-light;
+	}
 }
 
 .tweet.permalink-tweet,
