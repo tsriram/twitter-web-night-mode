@@ -11,10 +11,12 @@ You can access install from here:
 ## Developemnt
 
 * clone the repo and do `npm install`
+* run `gulp watch` and start hacking
 * edit code in `js` & `sass` directories as needed
 * run `gulp` or `npm run build` to build `dist/chrome` and `dist/firefox`
 
 **TODO**:
-* Add night mode theme to other twitter pages (currently applies only to home tab)
-* Clean up Sass
-* Gulp watch (didn't need it much so far)
+- [x] Add night mode theme to other twitter pages (currently applies only to home tab)
+- [ ] Clean up Sass - preferably multiple .scss files - each one for page specific styles and one for common styles 
+- [x] Gulp watch (didn't need it much so far)
+- [ ] Add CONTRIBUTION.md
