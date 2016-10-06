@@ -60,12 +60,6 @@ body.three-col.logged-in {
 		border-bottom: none;
 	}
 
-	.new-tweets-bar, .new-tweets-bar:hover {
-		background: $new-tweets-bar-bg;
-		color: $new-tweets-bar-text-color;
-		border-color: $border-color-light;
-	}
-
 	.module .flex-module {
 		background-color: $flex-module-bg;
 	}
@@ -258,6 +252,14 @@ body.three-col.logged-in {
 
 .Icon--home:before, .Icon--notifications:before, .Icon--dm:before {
 	color: $nav-bar-icon-color!important;
+}
+
+.stream-container .new-tweets-bar {
+		&, &:hover {
+		background: $new-tweets-bar-bg;
+		color: $new-tweets-bar-text-color;
+		border-color: $border-color-light;
+	}
 }
 
 .Trends--blankBackground,
