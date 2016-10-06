@@ -250,7 +250,7 @@ body.three-col.logged-in {
 	color: $nav-bar-text-color!important;
 }
 
-.Icon--home:before, .Icon--notifications:before, .Icon--dm:before {
+.Icon--home:before, .Icon--notifications:before, .Icon--dm:before, .Icon--lightning:before {
 	color: $nav-bar-icon-color!important;
 }
 
@@ -423,4 +423,22 @@ body.three-col.logged-in {
 // logged out state
 body.three-col.logged-out {
 	background-color: $light-bg!important;
+}
+
+// Moments page styles
+.MomentGuideNavigation-label, .MomentGuideVTwoCapsuleSummary-title, .MomentCapsuleCover-title {
+	color: $nav-bar-text-color!important;
+	padding: 3px;
+}
+
+.MomentGuideNavigation, .MomentGuideVTwoCapsuleGroup .MomentGuideVTwoCapsuleSummary--portrait, .MomentGuideVTwoCapsuleSummary--hero, .MomentCapsuleVTwoItemTweet--withText {
+	background-color: $dark-bg!important;
+}
+
+.MomentGuideVTwoCapsuleSummary-description, .MomentUserByline-fullname, .MomentCapsuleCover-description {
+	padding: 3px;
+	color: lighten($text-grey, 7%)!important;
+}
+.twitter-atreply, .js-display-url{
+	color: $text-grey!important;
 }
