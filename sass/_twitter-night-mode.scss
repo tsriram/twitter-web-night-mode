@@ -29,7 +29,7 @@ body.three-col.logged-in {
 	}
 
 	.QuoteTweet-fullname {
-		color: $quote-tweet-fullname-color;
+		color: $tweet-name-color!important;
 	}
 
 	.QuoteTweet-text {
@@ -192,6 +192,10 @@ body.three-col.logged-in {
 	.Footer-link {
 		color: $link-color!important;
 	}
+}
+
+.ProfileCard-bio, .ProfileCard-locationAndUrl {
+	color: $text-grey!important;
 }
 
 // notifications tab
@@ -437,6 +441,24 @@ body.three-col.logged-out {
 	padding: 3px;
 	color: lighten($text-grey, 7%)!important;
 }
-.twitter-atreply, .js-display-url{
+.twitter-atreply, .js-display-url, .twitter-hashtag {
 	color: $text-grey!important;
 }
+
+.MomentFormatLink-title, .MomentFormatLink-description {
+	color: $text-grey!important;
+}
+
+.QuoteTweet-fullname.u-linkComplex-target {
+	color: $white!important;
+}
+
+.QuoteTweet-text .pretty-link b, .QuoteTweet-text .pretty-link s {
+	color: $text-grey!important;
+}
+
+// Change trends window
+.js-location-nonpersonalized {
+		color: $text-grey!important;	
+}
+
