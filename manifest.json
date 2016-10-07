@@ -17,8 +17,6 @@
     "128": "images/icon128.png"
   },
 
-  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
-
   "page_action": {
     "default_icon": "images/icon32.png",
     "default_title": "Extension will be enabled when you open twitter.com"
