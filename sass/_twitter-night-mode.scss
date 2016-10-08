@@ -29,7 +29,7 @@ body.three-col.logged-in {
 	}
 
 	.QuoteTweet-fullname {
-		color: $tweet-name-color!important;
+		color: $tweet-name-color;
 	}
 
 	.QuoteTweet-text {
@@ -441,7 +441,7 @@ body.three-col.logged-out {
 	padding: 3px;
 	color: lighten($text-grey, 7%)!important;
 }
-.twitter-atreply, .js-display-url, .twitter-hashtag {
+.twitter-atreply, .twitter-timeline-link, .twitter-hashtag {
 	color: $text-grey!important;
 }
 
@@ -450,7 +450,7 @@ body.three-col.logged-out {
 }
 
 .QuoteTweet-fullname.u-linkComplex-target {
-	color: $white!important;
+	color: $white;
 }
 
 .QuoteTweet-text .pretty-link b, .QuoteTweet-text .pretty-link s {
@@ -458,7 +458,7 @@ body.three-col.logged-out {
 }
 
 // Change trends window
-.js-location-nonpersonalized {
+.trends-current-location {
 	color: $text-grey!important;	
 }
 
