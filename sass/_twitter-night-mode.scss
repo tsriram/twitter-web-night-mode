@@ -176,14 +176,17 @@ body.three-col.logged-in {
 	.ProfileHeaderCard-bio,
 	.ProfileHeaderCard-locationText,
 	.ProfileHeaderCard-joinDateText,
-	.ProfileHeaderCard-birthdateText {
+	.ProfileHeaderCard-birthdateText,
+	.ProfileHeaderCard-vineProfileText,
+	.ProfileHeaderCard-onlineHoursText {
 		color: $white;
 	}
 	.flex-module {
 		background-color: transparent!important;
 	}
 	.ProfileHeaderCard-nameLink,
-	.Footer-link {
+	.Footer-link,
+	.ProfileHeaderCard-urlText {
 		color: $link-color!important;
 	}
 }
@@ -242,6 +245,13 @@ body.three-col.logged-in {
 }
 
 // common styles - across all pages
+
+// this looks to be the class used to apply user selected theme for all links
+// overriding it with link color
+.u-textUserColor {
+	color: $link-color!important;
+}
+
 #global-actions>li>a {
 	border-color: $nav-bar-icon-color !important;
 }
@@ -445,20 +455,10 @@ body.three-col.logged-out {
 	padding: 3px;
 	color: lighten($text-grey, 7%)!important;
 }
-.twitter-atreply, .twitter-timeline-link, .twitter-hashtag {
-	color: $text-grey!important;
-}
 
-.MomentFormatLink-title, .MomentFormatLink-description {
-	color: $text-grey!important;
-}
-
-.QuoteTweet-fullname.u-linkComplex-target {
+.QuoteTweet-fullname.u-linkComplex-target,
+.MomentSportsScores-contentWrapper {
 	color: $white;
-}
-
-.QuoteTweet-text .pretty-link b, .QuoteTweet-text .pretty-link s {
-	color: $text-grey!important;
 }
 
 // Change trends window
