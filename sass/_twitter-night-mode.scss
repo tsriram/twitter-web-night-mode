@@ -252,7 +252,7 @@ body.three-col.logged-in {
 	color: $link-color!important;
 }
 
-#global-actions>li>a {
+#global-actions>li>a, {
 	border-color: $nav-bar-icon-color !important;
 }
 
@@ -294,7 +294,8 @@ body.three-col.logged-in {
 .profile-social-proof,
 .GridTimeline-items,
 .hovercard.gravity-south:not(.with-banner) .arrow,
-.hovercard .arrow {
+.hovercard .arrow,
+.ThreadedConversation-showMore {
 	background-color: $dark-bg!important;
 }
 
@@ -337,8 +338,14 @@ body.three-col.logged-in {
 }
 
 .inline-reply-tweetbox.swift,
-.stream.suggested-tweet-stream.permalink-replies {
-	border-color: $border-color-light;
+.stream.suggested-tweet-stream.permalink-replies,
+.ThreadedConversation, .ThreadedConversation-showMore:after, .ThreadedConversation-viewOther .view-other-link,
+.ThreadedConversation, .ThreadedConversation-showMore, .ThreadedConversation-showMore:after,
+.ThreadedConversation+.ThreadedConversation--loneTweet,
+:not(.ThreadedConversation--ownReply)+.ThreadedConversation--ownReply,
+.ThreadedConversation--ownReply+.ThreadedConversation--loneTweet:not(.ThreadedConversation--ownReply),
+.ThreadedConversation--loneTweet:first-child {
+	border-color: $border-color-light!important;
 }
 
 .caret-inner {
@@ -418,8 +425,14 @@ body.three-col.logged-in {
 	color: $text-grey;
 }
 
-#settings_nav .list-link:hover {
-	color: $link-color;
+#settings_nav .list-link:hover,
+.QuoteTweet .tweet-content,.QuoteTweet-text a,.QuoteTweet-text a:hover,
+.QuoteTweet-text a:focus,.QuoteTweet-text a:active,.QuoteTweet-text .pretty-link b,
+.QuoteTweet-text .pretty-link s,.QuoteTweet-text .pretty-link:hover b,
+.QuoteTweet-text .pretty-link:hover s,.QuoteTweet-text .pretty-link:focus b,
+.QuoteTweet-text .pretty-link:focus s,.QuoteTweet-text .pretty-link:active b,
+.QuoteTweet-text .pretty-link:active s {
+		color: $link-color!important;
 }
 
 .flex-module {
