@@ -455,7 +455,6 @@ body.three-col.logged-out {
 // Moments page styles
 .MomentGuideNavigation-label, .MomentGuideVTwoCapsuleSummary-title, .MomentCapsuleCover-title {
 	color: $nav-bar-text-color!important;
-	padding: 3px;
 }
 
 .MomentsGuidePage-content, .MomentGuideNavigation, .MomentGuideVTwoCapsuleGroup .MomentGuideVTwoCapsuleSummary--portrait, .MomentGuideVTwoCapsuleSummary--hero, .MomentCapsuleVTwoItemTweet--withText,
@@ -465,7 +464,6 @@ body.three-col.logged-out {
 }
 
 .MomentGuideVTwoCapsuleSummary-description, .MomentUserByline-fullname, .MomentCapsuleCover-description {
-	padding: 3px;
 	color: lighten($text-grey, 7%)!important;
 }
 
