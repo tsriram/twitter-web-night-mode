@@ -435,7 +435,9 @@ body.three-col.logged-out {
 	padding: 3px;
 }
 
-.MomentsGuidePage-content, .MomentGuideNavigation, .MomentGuideVTwoCapsuleGroup .MomentGuideVTwoCapsuleSummary--portrait, .MomentGuideVTwoCapsuleSummary--hero, .MomentCapsuleVTwoItemTweet--withText {
+.MomentsGuidePage-content, .MomentGuideNavigation, .MomentGuideVTwoCapsuleGroup .MomentGuideVTwoCapsuleSummary--portrait, .MomentGuideVTwoCapsuleSummary--hero, .MomentCapsuleVTwoItemTweet--withText,
+.MomentGuideVTwoCapsuleSummary.MomentGuideVTwoCapsuleSummary--small,
+.ListCreationModule {
 	background-color: $dark-bg!important;
 }
 
