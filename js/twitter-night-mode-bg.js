@@ -1,6 +1,9 @@
 var c = chrome || browser;
 var regex = /https:\/\/twitter\.com\/(.*)/;
 
+// a small survey to know why people uninstall
+c.runtime.setUninstallURL('https://goo.gl/forms/tEOXKxPjYpHsgoOj1');
+
 c.pageAction.onClicked.addListener(function(tab) {
   c.storage.local.get({'nightmode': true}, function(items) {
     if(items.nightmode) {
@@ -24,6 +27,7 @@ function setNightMode(tab) {
     c.tabs.insertCSS(tab.id, { file: 'css/main.css', allFrames: true});
     c.pageAction.setIcon({tabId: tab.id, path: 'images/icon32.png'});
     c.pageAction.setTitle({tabId: tab.id, title: 'Night mode enabled. Click to disable.'});
+    c.tabs.sendMessage(tab.id, { text: "removeUserStyle" });
   });
 }
 
