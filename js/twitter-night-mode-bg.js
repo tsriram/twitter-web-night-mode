@@ -24,6 +24,7 @@ function setNightMode(tab) {
     c.tabs.insertCSS(tab.id, { file: 'css/main.css', allFrames: true});
     c.pageAction.setIcon({tabId: tab.id, path: 'images/icon32.png'});
     c.pageAction.setTitle({tabId: tab.id, title: 'Night mode enabled. Click to disable.'});
+    c.tabs.sendMessage(tab.id, { text: "removeUserStyle" });
   });
 }
 
