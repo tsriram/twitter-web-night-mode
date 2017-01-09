@@ -1,6 +1,9 @@
 var c = chrome || browser;
 var regex = /https:\/\/twitter\.com\/(.*)/;
 
+// a small survey to know why people uninstall
+c.runtime.setUninstallURL('https://goo.gl/forms/tEOXKxPjYpHsgoOj1');
+
 c.pageAction.onClicked.addListener(function(tab) {
   c.storage.local.get({'nightmode': true}, function(items) {
     if(items.nightmode) {
