@@ -25,6 +25,7 @@
   "content_scripts": [
    {
      "matches": [
+        "https://twitter.com/*",
         "https://twitter.com/",
         "https://twitter.com/i/cards/*"
      ],
