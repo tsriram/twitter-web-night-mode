@@ -28,13 +28,21 @@ chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
 // night mode works with twitter's default theme.
 function removeUserStyle() {
   var initDataField = document.getElementById('init-data');
-  if(initDataField) {
-    var initData = JSON.parse(initDataField.value);
-    var screenName = initData && initData.screenName;
-    if(screenName) {
-      var userStyleId = 'user-style-' + screenName;
-      var userStyle = document.getElementById(userStyleId);
-      userStyle && userStyle.remove();
+  var initData = initDataField && JSON.parse(initDataField.value);
+  if(initData) {
+    var currentUserName = initData.screenName;
+    console.log('currentUserName', currentUserName);
+    var profileUserName = initData.profile_user && initData.profile_user.screen_name;
+    console.log('profileUserName', profileUserName);
+    if(currentUserName) {
+      var currentUserStyleId = 'user-style-' + currentUserName;
+      var currentUserStyle = document.getElementById(currentUserStyleId);
+      currentUserStyle && currentUserStyle.remove();
+    }
+    if(profileUserName) {
+      var profileUserStyleId = 'user-style-' + profileUserName;
+      var profileUserStyle = document.getElementById(profileUserStyleId);
+      profileUserStyle && profileUserStyle.remove();
     }
   }
 }
