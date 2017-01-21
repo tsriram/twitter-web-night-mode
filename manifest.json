@@ -42,10 +42,5 @@
     "storage"
   ],
 
-  "author": [
-    {
-      "name": "Sriram Thiagarajan",
-      "github": "tsriram"
-    }
-  ]
+  "author": "Sriram Thiagarajan"
 }
