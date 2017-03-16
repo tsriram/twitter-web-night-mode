@@ -474,6 +474,14 @@ body.logged-out {
 	color: $white;
 }
 
+.MomentCapsuleSummary-title {
+	color: $white;
+}
+
+.MomentCapsuleSummary-title:hover {
+	text-decoration: none
+}
+
 // Change trends window
 .trends-current-location {
 	color: $text-grey!important;	
