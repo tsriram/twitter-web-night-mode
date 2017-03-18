@@ -482,6 +482,19 @@ body.logged-out {
 	text-decoration: none
 }
 
+.MomentCapsuleItemTweet--withText {
+	background-color: #657786;
+}
+
+.MomentFormatLink-url {
+    color: #000;
+}
+
+.u-dir[dir="ltr"] {
+	color: $white;
+}
+
+
 // Change trends window
 .trends-current-location {
 	color: $text-grey!important;	
