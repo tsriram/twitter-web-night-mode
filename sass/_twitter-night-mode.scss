@@ -494,6 +494,10 @@ body.logged-out {
 	color: $white;
 }
 
+._timestamp, .js-short-timestamp, .js-relative-timestamp {
+	color: $white;
+}
+
 
 // Change trends window
 .trends-current-location {
