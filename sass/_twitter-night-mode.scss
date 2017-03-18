@@ -483,11 +483,11 @@ body.logged-out {
 }
 
 .MomentCapsuleItemTweet--withText {
-	background-color: #657786;
+	background-color: $darkgreyishblue;
 }
 
 .MomentFormatLink-url {
-    color: #000;
+    color: $black;
 }
 
 .u-dir[dir="ltr"] {
@@ -498,6 +498,14 @@ body.logged-out {
 	color: $white;
 }
 
+.MomentCapsuleItemTweet--withMedia {
+    background-color: $darkgreyishblue;
+    padding: 5px;
+}
+
+.TwitterCard .MomentCard {
+	background-color: $light-bg;
+}
 
 // Change trends window
 .trends-current-location {
