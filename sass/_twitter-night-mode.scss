@@ -487,3 +487,6 @@ body.logged-out {
 	color: $text-grey!important;	
 }
 
+.Trends, .WhoToFollow, .AdaptiveRelatedSearches, .SidebarFilterModule, .AdaptiveFiltersBar {
+	background-color: $trends-bg;
+}
