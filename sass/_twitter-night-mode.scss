@@ -246,6 +246,30 @@ body.logged-in {
 	}
 }
 
+// Quote tweets in DM
+.QuoteTweet-container, .DirectMessage-text {
+	background-color: $light-bg!important;
+}
+
+.DirectMessage-text {
+	.tco-ellipsis, .js-display-url {
+		color: $link-color;
+	}
+}
+
+.DirectMessage--sent .DirectMessage-text .pretty-link b, .DirectMessage--sent .DirectMessage-text .twitter-timeline-link {
+	text-decoration: none;
+}
+
+.DirectMessage--sent .Caret:before, .DirectMessage .Caret:after {
+	background-color: $dark-bg;
+	border-left-color: $light-bg!important;
+}
+
+.DirectMessage .Caret:after {
+	border-right-color: $light-bg!important;
+}
+
 // common styles - across all pages
 
 // this looks to be the class used to apply user selected theme for all links
