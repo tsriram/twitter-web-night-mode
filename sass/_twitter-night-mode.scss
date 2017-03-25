@@ -487,3 +487,17 @@ body.logged-out {
 	color: $text-grey!important;	
 }
 
+.Trends, .WhoToFollow, .AdaptiveRelatedSearches, .SidebarFilterModule, .AdaptiveFiltersBar {
+	background-color: $trends-bg;
+}
+
+// Advanced search page
+.search.advanced-search {
+	background-color: $trends-bg;
+	h1, span {
+		color: $white;
+	}
+	.input-daterange .input-group-addon {
+		background-color: $trends-bg;
+	}
+}
