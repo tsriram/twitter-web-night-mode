@@ -530,3 +530,17 @@ body.logged-out {
 .PollXChoice-choice--chart {
 	background-color: $light-bg!important;
 }
+
+// tweet activity
+// this iframe's body doesn't contain any class, so applying styles to body directly
+// this shouldn't break anything, hopefully
+body, .ep-Section, .ep-ColumnLeft, .ep-ColumnRight {
+	background-color: $light-bg;
+	color: $white;
+}
+
+.ep-Header .ep-Title, .ProfileTweet-fullname,
+.ep-TweetPerformance.ep-Section .ep-Metric .ep-MetricTopContainer,
+.ep-TweetPerformance.ep-Section .ep-EngagementsTable .ep-EngagementsTableHeader {
+	color: $white;
+}
