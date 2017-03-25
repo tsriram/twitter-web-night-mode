@@ -525,3 +525,8 @@ body.logged-out {
 		background-color: $trends-bg;
 	}
 }
+
+// twitter poll result
+.PollXChoice-choice--chart {
+	background-color: $light-bg!important;
+}
