@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Twitter Web - Night Mode",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Android/iOS like night mode for twitter web app",
   "homepage_url": "https://github.com/tsriram/twitter-web-night-mode",
 
