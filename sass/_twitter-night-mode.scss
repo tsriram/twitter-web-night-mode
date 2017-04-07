@@ -247,27 +247,17 @@ body.logged-in {
 }
 
 // Quote tweets in DM
-.QuoteTweet-container, .DirectMessage-text {
-	background-color: $light-bg!important;
+.QuoteTweet-container {
+	background-color: $dark-bg!important;
+	border-color: $link-color!important;
 }
 
-.DirectMessage-text {
-	.tco-ellipsis, .js-display-url {
-		color: $link-color;
-	}
+.DirectMessage--sent .Caret:before, .DirectMessage--sent .Caret:after {
+	border-left-color: transparent!important;
 }
 
-.DirectMessage--sent .DirectMessage-text .pretty-link b, .DirectMessage--sent .DirectMessage-text .twitter-timeline-link {
-	text-decoration: none;
-}
-
-.DirectMessage--sent .Caret:before, .DirectMessage .Caret:after {
-	background-color: $dark-bg;
-	border-left-color: $light-bg!important;
-}
-
-.DirectMessage .Caret:after {
-	border-right-color: $light-bg!important;
+.DirectMessage--sent .QuoteTweet, .DirectMessage--sent .QuoteTweet:hover {
+	border-color: $link-color!important;
 }
 
 // common styles - across all pages
@@ -534,7 +524,7 @@ body.logged-out {
 // tweet activity
 // this iframe's body doesn't contain any class, so applying styles to body directly
 // this shouldn't break anything, hopefully
-body, .ep-Section, .ep-ColumnLeft, .ep-ColumnRight {
+.ep-Section, .ep-ColumnLeft, .ep-ColumnRight {
 	background-color: $light-bg;
 	color: $white;
 }
