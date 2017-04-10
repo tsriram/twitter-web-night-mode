@@ -496,6 +496,31 @@ body.logged-out {
 	text-decoration: none
 }
 
+.MomentCapsuleItemTweet--withText {
+	background-color: $darkgreyishblue;
+}
+
+.u-dir[dir="ltr"] {
+	color: $white;
+}
+
+._timestamp, .js-short-timestamp, .js-relative-timestamp {
+	color: $white;
+}
+
+.MomentCapsuleItemTweet-date {
+	color: $white;
+}
+
+.MomentCapsuleItemTweet--withMedia {
+    background-color: $darkgreyishblue;
+    padding: 5px;
+}
+
+.TwitterCard .MomentCard {
+	background-color: $light-bg;
+}
+
 // Change trends window
 .trends-current-location {
 	color: $text-grey!important;	
