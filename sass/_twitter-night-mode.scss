@@ -567,3 +567,8 @@ body.logged-out {
 .ProfileListItem {
 	background-color: $dark-bg;
 }
+
+// live video page / moments
+.LiveVideoOfficialAccount, .LiveVideo-tweetBox {
+	background-color: $dark-bg;
+}
