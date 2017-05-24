@@ -284,8 +284,10 @@ body.logged-in {
 	color: $nav-bar-text-color!important;
 }
 
-.Icon--home:before, .Icon--notifications:before, .Icon--dm:before, .Icon--lightning:before {
-	color: $nav-bar-icon-color!important;
+.nav {
+	.Icon--home:before, .Icon--notifications:before, .Icon--dm:before, .Icon--lightning:before {
+		color: $nav-bar-icon-color!important;
+	}
 }
 
 .stream-container .new-tweets-bar {
