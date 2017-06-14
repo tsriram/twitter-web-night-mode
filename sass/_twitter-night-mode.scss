@@ -227,6 +227,7 @@ body.logged-in {
 	.DMInboxItem:hover,
 	.DMInboxItem.is-unread,
 	.DirectMessage--received .DirectMessage-message,
+	.DirectMessage--received .DirectMessage-text,
 	.DMConversation-composer,
 	.DMPopoverMenu {
 		background-color: $light-bg!important;
@@ -247,6 +248,9 @@ body.logged-in {
 		border-left-color: transparent!important;
 		border-right-color: transparent!important;
 		border-top-color: transparent!important;
+	}
+	.EdgeButton.EdgeButton--primary.tweet-action {
+		background-color: $link-color;
 	}
 }
 
