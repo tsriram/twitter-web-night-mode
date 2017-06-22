@@ -494,6 +494,10 @@ body.logged-out {
 	background-color: $dark-bg!important;
 }
 
+.AppContent:not(.wrapper){
+	background-color: $light-bg!important;
+}
+
 .MomentGuideVTwoCapsuleSummary-description, .MomentUserByline-fullname, .MomentCapsuleCover-description {
 	color: lighten($text-grey, 7%)!important;
 }
