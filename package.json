@@ -8,10 +8,11 @@
   "author": "Sriram Thiagarajan <sri.sjc@gmail.com> (https://github.com/tsriram)",
   "license": "MIT",
   "devDependencies": {
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-jsoncombine": "^1.0.3",
     "gulp-sass": "^2.3.2",
-    "del": "^2.2.2",
+    "gulp-watch": "^4.3.11",
     "run-sequence": "^1.2.2"
   }
 }
