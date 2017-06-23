@@ -493,6 +493,10 @@ body.logged-out {
 	color: lighten($text-grey, 7%)!important;
 }
 
+.MomentsPage.MomentsPermalinkPage, .MomentsPage.MomentsGuidePage {
+	background-color: $light-bg!important;
+}
+
 .QuoteTweet-fullname.u-linkComplex-target,
 .MomentSportsScores-contentWrapper {
 	color: $white;
