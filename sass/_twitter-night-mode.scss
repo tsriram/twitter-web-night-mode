@@ -494,8 +494,9 @@ body.logged-out {
 	background-color: $dark-bg!important;
 }
 
-.AppContent:not(.wrapper){
-	background-color: $light-bg!important;
+.MomentsPage.MomentsPermalinkPage,
+.MomentsPage.MomentsGuidePage {
+	background-color: $light-bg !important;
 }
 
 .MomentGuideVTwoCapsuleSummary-description, .MomentUserByline-fullname, .MomentCapsuleCover-description {
