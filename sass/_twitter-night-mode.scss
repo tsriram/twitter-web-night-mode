@@ -54,7 +54,7 @@ body.logged-in {
 	}
 
 	.DashboardProfileCard-avatarImage, .DashboardProfileCard-avatarLink {
-		border-color: $dashboard-profile-card-avatar-border-color;	
+		border-color: $dashboard-profile-card-avatar-border-color;
 	}
 
 	.DashboardProfileCard-bg {
@@ -144,11 +144,11 @@ body.logged-in {
 	}
 
 	.QuoteTweet-text a,
-	.QuoteTweet .tweet-content, .QuoteTweet-text a, .QuoteTweet-text a:hover, 
-	.QuoteTweet-text a:focus, .QuoteTweet-text a:active, 
-	.QuoteTweet-text .pretty-link b, .QuoteTweet-text .pretty-link s, 
-	.QuoteTweet-text .pretty-link:hover b, .QuoteTweet-text .pretty-link:hover s, 
-	.QuoteTweet-text .pretty-link:focus b, .QuoteTweet-text .pretty-link:focus s, 
+	.QuoteTweet .tweet-content, .QuoteTweet-text a, .QuoteTweet-text a:hover,
+	.QuoteTweet-text a:focus, .QuoteTweet-text a:active,
+	.QuoteTweet-text .pretty-link b, .QuoteTweet-text .pretty-link s,
+	.QuoteTweet-text .pretty-link:hover b, .QuoteTweet-text .pretty-link:hover s,
+	.QuoteTweet-text .pretty-link:focus b, .QuoteTweet-text .pretty-link:focus s,
 	.QuoteTweet-text .pretty-link:active b, .QuoteTweet-text .pretty-link:active s,
 	.fullname {
 		color: $link-color;
@@ -325,6 +325,11 @@ body.logged-in {
 	background-color: $dark-bg!important;
 }
 
+.DashUserDropdown.dropdown-menu li>a,
+.DashUserDropdown.dropdown-menu li>button {
+	color: $white;
+}
+
 // border top of this element distorts the UI a bit when
 // the container's bg is same as border color
 .GridTimeline-items .Grid:first-child .ProfileListItem {
@@ -375,7 +380,7 @@ body.logged-in {
 }
 
 .caret-inner {
-	border-bottom-color: $light-bg!important;	
+	border-bottom-color: $light-bg!important;
 }
 
 .caret-outer, .caret-inner {
@@ -489,6 +494,11 @@ body.logged-out {
 	background-color: $dark-bg!important;
 }
 
+.MomentsPage.MomentsPermalinkPage,
+.MomentsPage.MomentsGuidePage {
+	background-color: $light-bg !important;
+}
+
 .MomentGuideVTwoCapsuleSummary-description, .MomentUserByline-fullname, .MomentCapsuleCover-description {
 	color: lighten($text-grey, 7%)!important;
 }
@@ -537,7 +547,7 @@ body.logged-out {
 
 // Change trends window
 .trends-current-location {
-	color: $text-grey!important;	
+	color: $text-grey!important;
 }
 
 .Trends, .WhoToFollow, .AdaptiveRelatedSearches, .SidebarFilterModule, .AdaptiveFiltersBar {
