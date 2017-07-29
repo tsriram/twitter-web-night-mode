@@ -94,9 +94,6 @@ body.logged-in {
 	.suggested-tweet-stream,
 	.permalink .in-reply-to .stream-item, .permalink .in-reply-to .stream-item .tweet:hover,
 	.conversation-module .conversation-tweet-item .tweet:hover,
-	.tweet.js-stream-tweet.js-actionable-tweet.js-profile-popup-actionable.conversation-ancestor.conversation-tweet:hover,
-	.tweet.js-stream-tweet.js-actionable-tweet.js-profile-popup-actionable.has-cards.conversation-root.conversation-tweet.has-content:hover,
-	.tweet.js-stream-tweet.js-actionable-tweet.js-profile-popup-actionable.ancestor.hidden-ancestor.permalink-ancestor-tweet:hover,
 	.permalink.light-inline-actions.stream-uncapped.has-replies.original-permalink-page,
 	.DashboardProfileCard-avatarLink,
 	.ProfileCard,
@@ -603,4 +600,27 @@ body.logged-out {
 
 .ThreadedConversation-moreReplies {
 	background-color: $light-bg;
+}
+
+// photo gallery has a transparent background for tweet which shows only on hover
+.Gallery.with-tweet .GalleryTweet.enable-fade .content>* {
+	opacity: 0;
+    -ms-filter: "alpha(opacity=0)";
+    transition: opacity .25s ease-in,visibility .25s ease-in;
+    visibility: hidden;
+}
+
+.Gallery.with-tweet .GalleryTweet.enable-fade .stream-item-footer {
+	opacity: 1;
+    -ms-filter: "alpha(opacity=100)";
+    visibility: visible;
+}
+
+.Gallery.with-tweet .GalleryTweet .tweet, .Gallery.with-tweet .Gallery-content:hover .GalleryTweet.enable-fade .tweet {
+	background-color: rgba(20,29,38,.5)!important;
+	opacity: 1;
+}
+
+.Gallery.with-tweet .GalleryTweet.enable-fade .tweet {
+	background-color: rgba(20,29,38,0)!important;
 }
