@@ -1,0 +1,10 @@
+.ext-notification {
+  position: fixed;
+  background-color: papayawhip;
+  padding: 10px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: $dark-bg;
+  z-index: 9999;
+}
