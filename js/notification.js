@@ -1,6 +1,6 @@
 var c = chrome || browser;
 var today = new Date().toISOString();
-var blogUrl = "http://tsriram.in";
+var blogUrl = "https://goo.gl/ypAq23";
 
 function showNotification() {
   var notification = document.createElement('div');
