@@ -1,5 +1,7 @@
 # twitter-web-night-mode
 
+#### Update (Sep 25, 2017) - This extension is retired and will no longer be supported as twitter has launched official night mode for the website. [Read more](https://goo.gl/ypAq23).
+
 This is a web extension to bring [twitter's night mode](https://twitter.com/twitter/status/757969656493649921) to both Chrome & Firefox.
 
 You can access install from here:
